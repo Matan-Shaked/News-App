@@ -10,10 +10,13 @@
     <title>Today News</title>
 </head>
 <body>
+    <div class="container">
     <header class="header">
-    <img src="./logo.png" alt="Today News Logo" width="68" height="68">
+        <div class="logo">
+    <img src="./logo.png" alt="Today News Logo">
     <h1>Today News</h1>
-    <button>Share news with the world</button>
+    </div>
+    <button class="btn btn-large">Share news with the world</button>
     </header>
 
     <form class="fact-form">
@@ -26,20 +29,20 @@
             <option value="Science">Science</option>
             <option value="Finance">Finance</option>
         </select>
-        <button>Post</button>
+        <button class="btn btn-large">Post</button>
     </form>
 
-    <main>
+    <main class="main">
         <aside>
             <ul>
-                <li>
-                    <button>All</button>
+                <li class="category">
+                    <button class="btn btn-all-categories">All</button>
                 </li>
-                <li>
-                    <button>Technology</button>
+                <li class="category">
+                    <button class="btn btn-category" style="background-color: #3b82f6;">Technology</button>
                 </li>
-                <li>
-                    <button>Science</button>
+                <li class="category">
+                    <button class="btn btn-category" style="background-color: #16a34a;">Science</button>
                 </li>
             </ul>
         </aside>
@@ -48,13 +51,14 @@
             <ul>
                 <li class="fact">
                     <p >React is being developed by Meta (formerly facebook) 
-                        <a href="https://opensource.fb.com/" target="_blank">(Source)</a> 
-                        <span class="tag" style="background-color: #3b82f6;">#technology#</span> 
+                        <a class="source" href="https://opensource.fb.com/" target="_blank">(Source)</a> 
+
                     </p>
-                                            <div>
-                                                <button>👍 <strong>24</strong></button>
-                                                <button>🤯 <strong>9</strong></button>
-                                                <button>⛔ <strong>4</strong></button>
+                                            <span class="tag" style="background-color: #3b82f6;">#technology#</span>
+                                            <div class="vote-buttons">
+                                                <button>👍 24</button>
+                                                <button>🤯 9</button>
+                                                <button>⛔ 4</button>
                                             </div>
                 </li>
             </ul>
@@ -62,17 +66,19 @@
                 <li class="fact">
                     <p >Millennial dads spend 3 times as much time with their kids than their fathers spent with them. In 1982, 43% of   
                         fathers had never changed a diaper. Today, that number is down to 3%
-                    <a href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids" target="_blank">(Source)</a>
-                    <span class="tag" style="background-color: #eab308;">#society#</span>
+                    <a class="source" href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids" target="_blank">(Source)</a>
+
                     </p>
-                    <div>
-                        <button>👍 <strong>24</strong></button>
-                        <button>🤯 <strong>9</strong></button>
-                        <button>⛔ <strong>4</strong></button>
+                                        <span class="tag" style="background-color: #eab308;">#society#</span>
+                    <div class="vote-buttons">
+                        <button>👍 11</></button>
+                        <button>🤯 2</></button>
+                        <button>⛔ 0</></button>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
+    </div>
 </body>
 </html>
