@@ -7,20 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Today News</title>
+    <script src="script.js" defer></script>
+    <title>Today I learned</title>
 </head>
 <body>
     <div class="container">
     <header class="header">
         <div class="logo">
     <img src="./logo.png" alt="Today News Logo">
-    <h1>Today News</h1>
+    <h1>Today I learned...</h1>
     </div>
-    <button class="btn btn-large">Share news with the world</button>
+    <button class="btn btn-large btn-open">Share what you learned with the world</button>
     </header>
 
-    <form class="fact-form">
-        <input type="text" placeholder="Write the news that you heard">
+    <form class="fact-form hidden" id="form">
+        <input type="text" placeholder="Save the new things you heard">
         <span>200</span>
         <input type="text" placeholder="Trustworthy Source">
         <select name="" id="">
